@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>محول PDF إلى Word</title>
+  <title>محول PDF إلى Word احترافي</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
     <!-- رأس الصفحة -->
     <header class="header">
       <h1 class="title" data-lang="title">محول PDF إلى Word</h1>
-      <p class="subtitle" data-lang="subtitle">حوّل ملفات PDF إلى مستندات Word بسهولة مع دعم كامل للغة العربية</p>
+      <p class="subtitle" data-lang="subtitle">تحويل متقدم مع التنسيقات، الصور، والجداول</p>
       <div class="controls">
         <button id="langToggle" class="icon-btn" title="تبديل اللغة">
           <span class="lang-text">EN</span>
@@ -27,7 +27,7 @@
       </div>
     </header>
 
-    <!-- منطقة الرفع -->
+    <!-- بطاقة الرفع -->
     <div class="upload-card glass">
       <div class="drop-zone" id="dropZone">
         <svg class="upload-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -51,6 +51,14 @@
       <span class="spinner" id="spinner" style="display:none;"></span>
     </button>
 
+    <!-- شريط التقدم -->
+    <div id="progressContainer" class="progress-container" style="display:none;">
+      <div class="progress-bar">
+        <div id="progressFill" class="progress-fill"></div>
+      </div>
+      <p id="progressText" class="progress-text">0%</p>
+    </div>
+
     <!-- رسالة الحالة -->
     <div id="statusMessage" class="status-message" style="display:none;"></div>
 
@@ -58,9 +66,9 @@
     <a id="downloadLink" class="download-btn" style="display:none;" data-lang="download">تحميل ملف Word</a>
   </div>
 
-  <!-- السكريبتات -->
+  <!-- السكريبتات الأساسية -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
   <script src="https://unpkg.com/docx@8.5.0/build/index.umd.js"></script>
   <script src="script.js"></script>
 </body>
-</html>
+    </html> 
